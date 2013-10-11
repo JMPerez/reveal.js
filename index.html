@@ -34,39 +34,31 @@
 
 				<section id="intro">
 					<h1>The Spotify Platform</h1>
-					<h3>Music Hack Day Boston</h3>
-                    <h3 class="bottom">Andrew Mager (<a href="http://twitter.com/mager">@mager</a>) <span>Hacker Advocate</span></h3>
+					<h3 class="black">Music Hack Day NYC</h3>
+                    <div class="bottom">
+                        <h4>Andrew Mager (<a href="http://twitter.com/mager">@mager</a>)</h4>
+                        <h4>Hacker Advocate</h4>
+                    </div>
                     <img src="img/lady.png" id="intro-lady" />
 				</section>
 
 				<section data-state="white">
-                    <div class="hero">
-                        <p>#playeverywhere</p>
-					</div>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section data-state="white">
-					<section>
-                        <h2><span>Spotify</span> Play Button</h2>
-                        <img src="img/tumblr.png" id="tumblr" />
-                        <p><a href="http://embed.spotify.com">http://embed.spotify.com</a></p>
-					</section>
-					<section>
-						<h2>Tracks</h2>
-                        <p><iframe src="https://embed.spotify.com/?uri=spotify:track:5fEWugSKjh5I5DQHl5tkFc&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-                        <pre><code>&lt;iframe src="https://embed.spotify.com/?uri=spotify:track:5fEWugSKjh5I5DQHl5tkFc" width="300" height="380" frameborder="0" allowtransparency="true"&gt;&lt;/iframe&gt;</code></pre>
-					</section>
-					<section>
-						<h2>Albums</h2>
-                        <p><iframe src="https://embed.spotify.com/?uri=spotify:album:7w19PFbxAjwZ7UVNp9z0uT&view=list" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></p>
-                        <pre><code>&lt;iframe src="https://embed.spotify.com/?uri=spotify:album:7w19PFbxAjwZ7UVNp9z0uT&view=list" width="300" height="380" frameborder="0" allowtransparency="true"&gt;&lt;/iframe&gt;</code></pre>
-					</section>
-					<section>
-						<h2>Playlists</h2>
-                        <p><iframe src="https://embed.spotify.com/?uri=spotify:user:magerleagues:playlist:5CZ3KO3EExplZOzHDMzgym&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></p>
-                        <pre><code>&lt;iframe src="https://embed.spotify.com/?uri=spotify:user:magerleagues:playlist:5CZ3KO3EExplZOzHDMzgym&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"&gt;&lt;/iframe&gt;</code></pre>
-					</section>
+                    <section>
+                        <h2>Spotify Apps API</h2>
+                        <img src="img/soundrop.png" />
+                        <p>Apps inside Spotify</p>
+                    </section>
+                    <section>
+                        <h2>Spotify Apps API</h2>
+                        <ul>
+                            <li>Chromium Embedded Framework</li>
+                            <li>HTML 5 support: canvas, drag & drop, geolocation, WebGL, local storage, web workers, sockets</li>
+                            <li>Play music, access and modify playlists, interact with user data</li>
+                            <li>Alpha version of <a href="http://andrew.dropmark.com/105052">Visualizer app</a></li>
+                            <li>New version of async <a href="https://developer.spotify.com/technologies/apps/docs/preview/">1.x Javascript API</a>.</li>
+                            <li><a href="https://github.com/spotify/boilerplate-app">Boilerplate app</a>: contains the basic structure for your app.</li>
+                        </ul>
+                    </section>
 				</section>
 
 				<section data-state="white">
@@ -96,51 +88,60 @@ http://ws.spotify.com/lookup/1/.json?uri={uri}</code></pre>
                     </section>
 				</section>
 
+
+
+				<!-- Example of nested vertical slides -->
+				<section data-state="white">
+					<section>
+                        <h2><span>Spotify</span> Play Button</h2>
+                        <img src="img/tumblr.png" id="tumblr" />
+                        <p><a href="http://embed.spotify.com">http://embed.spotify.com</a></p>
+					</section>
+					<section>
+						<h2>Tracks</h2>
+                        <iframe src="https://embed.spotify.com/?uri=spotify:track:5fEWugSKjh5I5DQHl5tkFc&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                        <pre><code>&lt;iframe src="https://embed.spotify.com/?uri=spotify:track:5fEWugSKjh5I5DQHl5tkFc" width="300" height="380" frameborder="0" allowtransparency="true"&gt;&lt;/iframe&gt;</code></pre>
+					</section>
+					<section>
+						<h2>Albums</h2>
+                        <iframe src="https://embed.spotify.com/?uri=spotify:album:7w19PFbxAjwZ7UVNp9z0uT&view=list" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                        <pre><code>&lt;iframe src="https://embed.spotify.com/?uri=spotify:album:7w19PFbxAjwZ7UVNp9z0uT&view=list" width="300" height="380" frameborder="0" allowtransparency="true"&gt;&lt;/iframe&gt;</code></pre>
+					</section>
+					<section>
+						<h2>Playlists</h2>
+                        <iframe src="https://embed.spotify.com/?uri=spotify:user:magerleagues:playlist:5CZ3KO3EExplZOzHDMzgym&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                        <pre><code>&lt;iframe src="https://embed.spotify.com/?uri=spotify:user:magerleagues:playlist:5CZ3KO3EExplZOzHDMzgym&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"&gt;&lt;/iframe&gt;</code></pre>
+					</section>
+				</section>
+
 				<section>
                     <section>
                         <h2>libspotify</h2>
                         <p>Embed Spotify in your application or hardware.</p>
                         <img src="img/boxee.png" />
                         <p>C library wrapped in Ruby, Python, Java, C#</p>
+                        <p>Builds in iOS, Android, Win32, Mac OS X/Darwin, Linux, even one for Raspberry Pi</p>
                     </section>
 
                     <section>
                         <h2>CocoaLibSpotify</h2>
                         <img src="img/spot-on.png" />
                         <ul class="left">
-                            <li>Supports iOS, Android</li>
+                            <li>For iOS (iPhone, iPad)</li>
                             <li>Open source, hosted on <a href="https://github.com/spotify/cocoalibspotify">Github</a></li>
                         </ul>
                     </section>
 				</section>
 
-				<section data-state="white">
-                    <section>
-                        <h2>Spotify Apps API</h2>
-                        <img src="img/soundrop.png" />
-                        <p>Apps inside Spotify</p>
-                    </section>
-                    <section>
-                        <h2>Spotify Apps API</h2>
-                        <ul>
-                            <li>Chromium Embedded Framework</li>
-                            <li>HTML 5 support: canvas, drag & drop, geolocation, WebGL, local storage, web workers, sockets</li>
-                            <li>Asyncronous Javascript API</li>
-                            <li>Play music, access and modify playlists, interact with user data</li>
-                            <li>Sneak peak of <a href="preview">1.0 API</a></li>
-                            <li><a href="http://github.com/spotify/apps-tutorial">Spotify Apps Tutorial</a>: an app that shows you how to make an app</li>
-                        </ul>
-                    </section>
-				</section>
-
-				<section>
+			<section>
                     <h1>It's your turn to play</h1>
                     <h3 class="gap"><a href="http://developer.spotify.com">http://developer.spotify.com</a></h3>
                     <ul class="left">
-                        <li>Best Spotify Hack: 1 year Premium</li>
-                        <li>Contact: <a href="http://twitter.com/spotifyplatform">@SpotifyPlatform</a>, <a href="mailto:mager@spotify.com">mager@spotify.com</a></li>
+                        <li>Best Spotify Hack: <strong>1 year of Spotify Premium</strong></li>
+                        <li>We are hiring! <a href="http://spotify.com/jobs">http://spotify.com/jobs</a></li>
+                        <li>Andrew Mager, <a href="http://twitter.com/mager">@mager</a></li>
                     </ul>
-                    <img src="img/bees.png" />
+                    <p><img src="img/white-logo.png" /></p>
 
 				</section>
 
