@@ -144,6 +144,7 @@ body {
 h2 span {color:#74c043;}
 
 section h1, section h2 {font-weight:bold !important;}
+.dark, .dark h1, .dark h3, .dark h4 {text-shadow: 3px 3px #000;}
 
 #intro h1 {margin-top:20px;font-weight:bold;}
 #intro h1, #intro h3 {text-align:left;}
