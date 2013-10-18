@@ -10,16 +10,11 @@
  *********************************************/
 body {
   background: #59c442;
-  background-image: linear-gradient(left top, rgb(180,213,0) 12%, rgb(126,175,0) 56%);
-
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    color-stop(0.12, rgb(180,213,0)),
-    color-stop(0.56, rgb(126,175,0))
-  );
-  background-color: #2b2b2b;
+  background-color: #080808;
+  background-image: url('../../img/crowd.jpg');
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
 }
 
 .reveal {
@@ -152,8 +147,7 @@ h2 span {color:#74c043;}
 
 section h1, section h2 {font-weight:bold !important;}
 
-#intro-lady {position: absolute; bottom:10px;right:10px;}
-
+#intro a {color:#7ea613;}
 #intro h1 {margin-top:20px;font-weight:bold;}
 #intro h1, #intro h3 {text-align:left;}
 #intro h3 {line-height:1.2em;color:#000;}
