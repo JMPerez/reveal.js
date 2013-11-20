@@ -7,7 +7,7 @@
 		<title>The Spotify Platform presentation</title>
 
 		<meta name="description" content="Understanding all of Spotify's APIs">
-		<meta name="author" content="Andrew Mager">
+		<meta name="author" content="José M. Pérez">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -34,10 +34,10 @@
 
 				<section id="intro" class="dark">
 					<h1>The Spotify Platform</h1>
-					<h3 class="black">Music Hack Day NYC</h3>
+					<h3 class="black">BIME Hack Day 2013</h3>
                     <div class="bottom">
-                        <h4>Andrew Mager (<a href="http://twitter.com/mager">@mager</a>)</h4>
-                        <h4>Hacker Advocate</h4>
+                        <h4>José M. Pérez (<a href="http://twitter.com/jmperezperez">@jmperezperez</a>)</h4>
+                        <h4>Web Developer</h4>
                     </div>
 				</section>
 
@@ -51,9 +51,9 @@
                         <h2>Spotify Apps API</h2>
                         <ul>
                             <li>Chromium Embedded Framework</li>
-                            <li>HTML 5 support: canvas, drag & drop, geolocation, WebGL, local storage, web workers, sockets</li>
+                            <li>HTML 5 support: canvas, drag & drop, WebGL, local storage, web workers, sockets</li>
                             <li>Play music, access and modify playlists, interact with user data</li>
-                            <li>Alpha version of <a href="http://andrew.dropmark.com/105052">Visualizer app</a></li>
+                            <li>Beta version of <a href="http://labs.spotify.com/2013/11/14/announcing-spotify-visualization-api-beta/">Visualizer app</a></li>
                             <li>New version of async <a href="https://developer.spotify.com/technologies/apps/docs/preview/">1.x Javascript API</a>.</li>
                             <li><a href="https://github.com/spotify/boilerplate-app">Boilerplate app</a>: contains the basic structure for your app.</li>
                         </ul>
@@ -62,12 +62,13 @@
 
 				<section data-state="white">
                     <section>
-                        <h2><span>Spotify</span> Web API</h2>
-                        <p>A REST interface to search the Spotify catalog</p>
+                        <h2>Spotify Web API</h2>
+                        <p>An API to surface the Spotify catalog through GET requests</p>
                         <img src="img/web-api.png" id="web-api" />
                     </section>
                     <section>
-                        <h2>Search &amp; Lookup</h2>
+                      <h2>Search &amp; Lookup</h2>
+
 <pre><code>http://ws.spotify.com/service/version/method{.format}?parameters
 
 http://ws.spotify.com/search/1/album.json?q=foo
@@ -76,14 +77,10 @@ http://ws.spotify.com/search/1/track.json?q=foo
 
 http://ws.spotify.com/lookup/1/.json?uri={uri}</code></pre>
                         <ul class="left">
-                            <li>Supports JSON (and XML...)</li>
-                            <li><a href="http://www.spotify.com/us/about/features/advanced-search-syntax/">Advanced search syntax</a></li>
-                            <li>UTF-8 responses</li>
-                            <li>Territory availability</li>
-                            <li>Caching</li>
+                          <li>Provides information like name, release date, popularity, artists
+                          <li><b>Search</b>: String -> multiple results</li>
+                          <li><b>Lookup</b>: Spotify URI -> Details for that result</li>
                         </ul>
-                        <p><a href="https://developer.spotify.com/technologies/web-api/">https://developer.spotify.com/technologies/web-api/</a></p>
-
                     </section>
 				</section>
 
@@ -92,7 +89,7 @@ http://ws.spotify.com/lookup/1/.json?uri={uri}</code></pre>
 				<!-- Example of nested vertical slides -->
 				<section data-state="white">
 					<section>
-                        <h2><span>Spotify</span> Play Button</h2>
+                        <h2>Spotify Play Button</h2>
                         <img src="img/tumblr.png" id="tumblr" />
                         <p><a href="http://embed.spotify.com">http://embed.spotify.com</a></p>
 					</section>
@@ -138,7 +135,7 @@ http://ws.spotify.com/lookup/1/.json?uri={uri}</code></pre>
                     <ul class="left">
                         <li>Best Spotify Hack: <strong>1 year of Spotify Premium</strong></li>
                         <li>We are hiring! <a href="http://spotify.com/jobs">http://spotify.com/jobs</a></li>
-                        <li>Andrew Mager, <a href="http://twitter.com/mager">@mager</a></li>
+                        <li>José M. Pérez, <a href="http://twitter.com/jmperezperez">@jmperezperez</a></li>
                     </ul>
                     <p><img src="img/white-logo.png" /></p>
 

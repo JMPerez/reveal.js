@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * Default theme for reveal.js.
- * 
+ *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
@@ -9,10 +9,7 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background-image: url('../../img/crowd.jpg');
-  background-size: cover;
-  -moz-background-size: cover;  /* Firefox 3.6 */
-  background-position: center;  /* Internet Explorer 7/8 */
+  background-color: #333;
 }
 
 .reveal {
@@ -42,7 +39,7 @@ body {
   color: #eeeeee;
   font-family: "Proxima Nova", "Helvetica Neue", sans-serif;
   line-height: 0.9em;
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  /*text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);*/
 }
 
 /*********************************************
@@ -138,13 +135,13 @@ body {
 
 
 /*********************************************
- * CUSTOM STYLES 
+ * CUSTOM STYLES
  *********************************************/
 
 h2 span {color:#74c043;}
 
 section h1, section h2 {font-weight:bold !important;}
-.dark, .dark h1, .dark h3, .dark h4 {text-shadow: 3px 3px #000;}
+/*.dark, .dark h1, .dark h3, .dark h4 {text-shadow: 3px 3px #000;}*/
 
 #intro h1 {margin-top:20px;font-weight:bold;}
 #intro h1, #intro h3 {text-align:left;}
