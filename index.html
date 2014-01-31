@@ -34,7 +34,7 @@
 
 				<section id="intro" class="dark">
 					<h1>The Spotify Platform</h1>
-					<h3 class="black">BIME Hack Day 2013</h3>
+					<h3 class="black">Hack The Globe 2013</h3>
                     <div class="bottom">
                         <h4>José M. Pérez (<a href="http://twitter.com/jmperezperez">@jmperezperez</a>)</h4>
                         <h4>Web Developer</h4>
@@ -51,13 +51,31 @@
                         <h2>Spotify Apps API</h2>
                         <ul>
                             <li>Chromium Embedded Framework</li>
-                            <li>HTML 5 support: canvas, drag & drop, WebGL, local storage, web workers, sockets</li>
-                            <li>Play music, access and modify playlists, interact with user data</li>
-                            <li>Beta version of <a href="http://labs.spotify.com/2013/11/14/announcing-spotify-visualization-api-beta/">Visualizer app</a></li>
-                            <li>New version of async <a href="https://developer.spotify.com/technologies/apps/docs/preview/">1.x Javascript API</a>.</li>
-                            <li><a href="https://github.com/spotify/boilerplate-app">Boilerplate app</a>: contains the basic structure for your app.</li>
+                            <li>HTML 5 support: canvas, drag &amp; drop, WebGL, local storage, web workers, sockets</li>
+                            <li>Play music, access and modify playlists, interact with user data</li>                            
                         </ul>
                     </section>
+					<section>
+                        <h2>Examples of Spotify Apps</h2>
+
+						<ul>
+							<li><strong>Drag &amp; Drop</strong>: <a href="spotify:app:filtr">Filtr</a></li>
+							<li><strong>User's Library</strong>: <a href="spotify:app:tastebuds">Tastebuds</a></li>
+							<li><strong>Visualizations</strong>: <a href="spotify:app:visualizer">Visualizer</a></li>
+							<li><strong>What's playing</strong>: <a href="spotify:app:musixmatch">Musixmatch</a></li>
+							<li><strong>Listen Language</strong>: <a href="spotify:app:listenlanguage">Filtr</a></li>
+							<li>more on <a href="spotify:app:finder">Spotify's App Finder</a></li>
+						</ul>
+					</section>
+
+                   <section>
+                    	<h2>How to start building a Spotify App</h2>
+                        <ul>
+                        	<li><a href="https://github.com/spotify/boilerplate-app">Boilerplate app</a>: contains the basic structure for your app.</li>
+                        	<li><a href="https://github.com/spotify/apps-tutorial">Tutorial app</a>: contains working code snippets covering common use cases.</li>
+                        </ul>
+                    </section>
+
 				</section>
 
 				<section data-state="white">
@@ -76,6 +94,7 @@ http://ws.spotify.com/search/1/artist.json?q=foo
 http://ws.spotify.com/search/1/track.json?q=foo
 
 http://ws.spotify.com/lookup/1/.json?uri={uri}</code></pre>
+
                         <ul class="left">
                           <li>Provides information like name, release date, popularity, artists
                           <li><b>Search</b>: String -> multiple results</li>
@@ -84,9 +103,36 @@ http://ws.spotify.com/lookup/1/.json?uri={uri}</code></pre>
                     </section>
 				</section>
 
+				<section data-state="white">
+                    <section>
+                        <h2>libspotify</h2>
+                        <p>Embed Spotify in your application or hardware.</p>
+                        <img src="img/boxee.png" width="200"/>
+                        <p>C library wrapped in Ruby, Python, Java, C#</p>
+                        <p>Builds in iOS, Android, Win32, Mac OS X/Darwin, Linux, even one for Raspberry Pi</p>
+                        <p>It has enough features to write a complete client. See <a href="https://github.com/iKenndac/Viva">Viva</a></p>
+                    </section>
 
+                    <section>
+                        <h2>CocoaLibSpotify</h2>
+                        <img src="img/spot-on.png" />
+                        <ul class="left">
+                            <li>For iOS (iPhone, iPad)</li>
+                            <li>Open source, hosted on <a href="https://github.com/spotify/cocoalibspotify">Github</a></li>
+                        </ul>
+                    </section>
 
-				<!-- Example of nested vertical slides -->
+                    <section>
+                        <h2>Examples</h2>
+                        <ul>
+                        	<li>Guess the song<br/>
+                        		<img src="img/guess-the-song.png" width="400"/>
+                        	</li>
+                        	<li><a href="https://github.com/spotify/cocoalibspotify/tree/master/iOS%20Library/Sample%20Projects">Other samples</a></li>
+                        </ul>
+                    </section>
+				</section>
+
 				<section data-state="white">
 					<section>
                         <h2>Spotify Play Button</h2>
@@ -111,35 +157,25 @@ http://ws.spotify.com/lookup/1/.json?uri={uri}</code></pre>
 				</section>
 
 				<section data-state="white">
-                    <section>
-                        <h2>libspotify</h2>
-                        <p>Embed Spotify in your application or hardware.</p>
-                        <img src="img/boxee.png" />
-                        <p>C library wrapped in Ruby, Python, Java, C#</p>
-                        <p>Builds in iOS, Android, Win32, Mac OS X/Darwin, Linux, even one for Raspberry Pi</p>
-                    </section>
 
-                    <section>
-                        <h2>CocoaLibSpotify</h2>
-                        <img src="img/spot-on.png" />
-                        <ul class="left">
-                            <li>For iOS (iPhone, iPad)</li>
-                            <li>Open source, hosted on <a href="https://github.com/spotify/cocoalibspotify">Github</a></li>
-                        </ul>
-                    </section>
-				</section>
-
-			<section class="dark">
-                    <h1>It's your turn to play</h1>
-                    <h3 class="gap"><a href="https://developer.spotify.com">https://developer.spotify.com</a></h3>
-                    <ul class="left">
-                        <li>Best Spotify Hack: <strong>1 year of Spotify Premium</strong></li>
-                        <li>We are hiring! <a href="http://spotify.com/jobs">http://spotify.com/jobs</a></li>
-                        <li>José M. Pérez <a href="http://twitter.com/jmperezperez">@jmperezperez</a></li>
-                        <li>Slides on <strong>http://goo.gl/dn739L</strong></li>
+                    <h2>If you need help</h2>
+                    <ul>
+                    	<li>Check out our dev site <a href="https://developer.spotify.com">https://developer.spotify.com</a></li>
+                    	<li>Send a tweet to <a href="http://twitter.com/jmperezperez">@jmperezperez</a> or <a href="http://twitter.com/SpotifyPlatform">@SpotifyPlatform</a></li>
+                    	<li>Browse the <a href="stackoverflow.com/questions/tagged/spotify">Spotify tag on Stackoverflow</a>
                     </ul>
-                    <p><img src="img/white-logo.png" height="100"/></p>
+                </section>
+                <section class"dark">
+                	<h1>It's your turn to play</h1>
+                    <ul class="left">
+                        <li>Best Spotify Hack: <strong>6 months of Spotify Premium</strong> + <strong>speaker with Spotify Connect</li>
+                    </ul>
+                    <img src="img/spotify-connect.png" width="300" />
 
+                    <hr/>
+                    José M. Pérez <a href="http://twitter.com/jmperezperez">@jmperezperez</a><br/>
+                    Slides on <strong>http://goo.gl/dn739L</strong>
+                    
 				</section>
 
 			</div>
